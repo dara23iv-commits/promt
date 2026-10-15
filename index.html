@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PROMT | AI Контент</title>
+  <style>
+    :root {
+      --bg: #0a0a0f;
+      --card: #111118;
+      --accent: #7c3aed;
+      --accent2: #22d3ee;
+      --text: #e5e7eb;
+      --muted: #9ca3af;
+    }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: system-ui, -apple-system, sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.6;
+    }
+    .container { max-width: 960px; margin: 0 auto; padding: 0 20px; }
+    header {
+      padding: 40px 0 20px;
+      text-align: center;
+    }
+    .logo {
+      font-size: 2.5rem;
+      font-weight: 800;
+      background: linear-gradient(90deg, var(--accent), var(--accent2));
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+    .tagline { color: var(--muted); margin-top: 8px; }
+    nav {
+      display: flex;
+      justify-content: center;
+      gap: 24px;
+      margin: 24px 0 40px;
+      flex-wrap: wrap;
+    }
+    nav a {
+      color: var(--text);
+      text-decoration: none;
+      font-weight: 500;
+    }
+    nav a:hover { color: var(--accent2); }
+    .hero {
+      text-align: center;
+      padding: 60px 0;
+    }
+    .hero h1 { font-size: 3rem; margin-bottom: 16px; }
+    .hero p { font-size: 1.2rem; color: var(--muted); max-width: 600px; margin: 0 auto 32px; }
+    .btn {
+      display: inline-block;
+      background: var(--accent);
+      color: white;
+      padding: 12px 28px;
+      border-radius: 999px;
+      text-decoration: none;
+      font-weight: 600;
+      transition: 0.2s;
+    }
+    .btn:hover { background: #6d28d9; }
+    section { padding: 60px 0; }
+    h2 { font-size: 2rem; margin-bottom: 24px; text-align: center; }
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 20px;
+    }
+    .card {
+      background: var(--card);
+      padding: 24px;
+      border-radius: 16px;
+      border: 1px solid #1f1f2e;
+    }
+    .card h3 { margin-bottom: 8px; }
+    .card p { color: var(--muted); }
+    footer {
+      text-align: center;
+      padding: 40px 0;
+      color: var(--muted);
+      border-top: 1px solid #1f1f2e;
+      margin-top: 40px;
+    }
+    .tg { color: var(--accent2); text-decoration: none; font-weight: 600; }
+  </style>
+</head>
+<body>
+  <header class="container">
+    <div class="logo">PROMT</div>
+    <div class="tagline">AI-контент • Безкоштовні інструменти • @promt_ww</div>
+    <nav>
+      <a href="#about">Про мене</a>
+      <a href="#content">Контент</a>
+      <a href="#tools">Інструменти</a>
+      <a href="#contact">Контакт</a>
+    </nav>
+  </header>
+
+  <section class="hero container">
+    <h1>Створюю корисний AI-контент</h1>
+    <p>Ділюся безкоштовними інструментами штучного інтелекту, картками, підказками та ідеями для тих, хто хоче використовувати ШІ ефективно.</p>
+    <a href="https://t.me/promt_ww" class="btn" target="_blank">Підписатися на Telegram</a>
+  </section>
+
+  <section id="about" class="container">
+    <h2>Про мене</h2>
+    <div class="card" style="max-width: 700px; margin: 0 auto;">
+      <p>Привіт! Це PROMT — простір про штучний інтелект і безкоштовні інструменти. Тут збираємо картки, огляди, підказки та все корисне для тих, хто хоче використовувати ШІ вже зараз.</p>
+    </div>
+  </section>
+
+  <section id="content" class="container">
+    <h2>Що я роблю</h2>
+    <div class="grid">
+      <div class="card">
+        <h3>Картки AI-інструментів</h3>
+        <p>Візуальні картки з плюсами, категоріями та посиланнями на безкоштовні ШІ.</p>
+      </div>
+      <div class="card">
+        <h3>Огляди та підказки</h3>
+        <p>Короткі пояснення, як користуватися інструментами та для яких задач вони підходять.</p>
+      </div>
+      <div class="card">
+        <h3>Збірники</h3>
+        <p>Таблиці та списки найкращих безкоштовних варіантів для фото, відео, тексту та коду.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="tools" class="container">
+    <h2>Популярні напрямки</h2>
+    <div class="grid">
+      <div class="card">
+        <h3>Генерація зображень</h3>
+        <p>Leonardo, Flux, Stable Diffusion, Playground та інші безкоштовні варіанти.</p>
+      </div>
+      <div class="card">
+        <h3>Відео та анімація</h3>
+        <p>Kling, Hailuo, Runway, Luma, Pika та локальні рішення.</p>
+      </div>
+      <div class="card">
+        <h3>Чат та пошук</h3>
+        <p>Gemini, Grok, Claude, Perplexity, ChatGPT та локальні моделі (Ollama, LM Studio).</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact" class="container">
+    <h2>Зв’язок</h2>
+    <div class="card" style="text-align: center; max-width: 500px; margin: 0 auto;">
+      <p style="margin-bottom: 16px;">Основний канал з усім контентом:</p>
+      <a href="https://t.me/promt_ww" class="tg" target="_blank">t.me/promt_ww</a>
+    </div>
+  </section>
+
+  <footer>
+    <p>© 2026 PROMT • @promt_ww</p>
+  </footer>
+</body>
+</html>
